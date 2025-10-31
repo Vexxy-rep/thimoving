@@ -364,3 +364,15 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+.card {
+  overflow: hidden;        /* empêche le débordement */
+  border-radius: 1rem;     /* optionnel : arrondit les bords */
+}
+
+.card__image {
+  width: 150%;             /* prend toute la largeur de la carte */
+  height: auto;            /* conserve les proportions */
+  display: block;          /* évite les petits espaces sous l’image */
+  object-fit: cover;       /* rogne élégamment l’image si besoin */
+}
